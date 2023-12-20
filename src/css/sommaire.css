@@ -1,0 +1,11 @@
+.sommaire{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.sommaire__img{
+    width: 35%;
+    height: auto;
+    padding-right: 2%;
+}
+
