@@ -1,11 +1,41 @@
 .sommaire{
+    display: block;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 5%;
+    margin-bottom: 15%;
     display: flex;
-    margin-bottom: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .sommaire__img{
-    width: 35%;
+    position : relative;
+    width: 45%;
     height: auto;
-    padding-right: 2%;
+    border-radius: 8%;
+    
+}
+
+.sommaire__btn{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.sommaire__p{
+    position: relative;
+    width: 45%;
+    text-align:start;
+    margin-right: 2%;
+}
+
+.sommaire__a{
+    text-decoration: none;
+    color: black;
 }
 
