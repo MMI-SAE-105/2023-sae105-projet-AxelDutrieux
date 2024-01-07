@@ -1,17 +1,27 @@
 .header{
     position: relative;
     display: block;
-    width: 100vw;
-    height: 100vh;
     top: -8px;
     left: -8px;
+    
+}
+
+.header--home{
+    width: 100vw;
+    height: 100vh;
     margin-bottom: 15%;
+}
+
+.header--other{
+    width: 100vw;
+    height: 8vh;
+    background-color: #999165;
 }
 
 .header__menu{
     position: absolute;
     right: 5%;
-    top: 2%;
+    margin-top: 2%;
     width: 10%;
     height: auto;
 }
@@ -28,7 +38,7 @@
     display: block;
     position: absolute;
     right: 25%;
-    top: 2%;
+    margin-top: 2%;
     width: 10%;
     height: auto;
 }
