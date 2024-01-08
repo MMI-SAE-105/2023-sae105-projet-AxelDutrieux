@@ -1,0 +1,78 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--principal);
+    display: grid;
+    place-content: center;  
+    z-index: 1000;
+}
+
+.noscroll
+.noscroll body{
+    overflow: hidden;
+}
+
+
+.nav__ul{
+    list-style: none;
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    
+
+}
+
+.nav__p{
+    font-style: var(--article-h1);
+}
+
+.nav__h1{
+    font-style: var(--article-h1);
+    margin-bottom: 65px;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+.nav__li{
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.nav__cross{
+    background: none;
+    border: none;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 30px;
+    right: 15px;
+}
+
+
+.nav span a{
+    text-decoration: none;
+    color: var(--H1-color);
+    font-size: var(--Hmenu-size);
+    font-style: var(--article-h1);
+    margin-bottom: 10px;
+    text-align: center;
+    /* revennir à la ligne entre chaque lien */
+    display: block;
+    
+
+}
+
+.nav__btn{
+    background: none;
+    border: none;
+    font-size: var(--H1-size);
+    font-style: var(--article-h1);
+    color: var(--H1-color);
+    text-decoration: none;
+}
