@@ -1,13 +1,18 @@
-.article__p{
+.article__sub{
     color: gray;
     font-size: small;
+    font-family: var(--p);
 }
 
 .article__h1{
-
+    font-family: var(--article-h1);
 
 }
 
 .article__h2{
+    font-family: var();
+}
 
+.article__p{
+    font-family: var(--p);
 }

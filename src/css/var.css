@@ -3,5 +3,9 @@
     --principal: #999165;
 
     /*fonts*/
-    --home-title: 'Quando', cursive;
+    --home-title: 'Quando';
+    --p: 'Playfair Display';
+    --article-h1: 'Courier Prime', bold;
+    --article-h2: 'Courier Prime', bold;
+
 }
