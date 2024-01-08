@@ -1,5 +1,5 @@
 .article__sub{
-    color: gray;
+    color: var(--soustitre);
     font-size: small;
     font-family: var(--p);
 }
@@ -15,4 +15,9 @@
 
 .article__p{
     font-family: var(--p);
+}
+
+.article__img{
+    width: 100%;
+    height: auto;
 }
