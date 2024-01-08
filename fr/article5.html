@@ -36,6 +36,49 @@
         <section>
             <h1>Découvrez ces autres réalisations</h1>
         </section>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button @click="parent=$refs.parent; parent.scrollLeft -= parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button>
+            <button @click="parent=$refs.parent; parent.scrollLeft += parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"  @scroll.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="../public/img/ProjetImg/Ravissante.webp" alt="image ecran 1">
+                        <figcaption class="carrousel__title">Ravissante</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="../public/img/ProjetImg/la7èmeCompagnie2.webp" alt="image ecran 2">
+                        <figcaption class="carrousel__title">La 7ème Compagnie 2</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="../public/img/ProjetImg/Opération.webp" alt="image ecran 3">
+                        <figcaption class="carrousel__title">Opération Lady Marlène</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="../public/img/ProjetImg/impossible-pas-francais.webp" alt="image ecran 4">
+                        <figcaption class="carrousel__title">Impossible... Pas Français</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="../public/img/ProjetImg/la7èmeCompagnie2.webp" alt="image ecran 5">
+                        <figcaption class="carrousel__title">La 7ème Compagnie 1</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="../public/img/ProjetImg/la-brune-que-voila.webp" alt="image ecran 6">
+                        <figcaption class="carrousel__title">La brune que voila</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer class="footer">
         <a href="./menu"><img class="footer__i" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>

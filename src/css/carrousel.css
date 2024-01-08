@@ -1,0 +1,84 @@
+* {
+    /* change le box model */
+    box-sizing: border-box;
+
+}
+img {
+    /* image responsive, largeur maxi */
+    max-width: 100%;
+    /* hauteur "auto" */
+    height: auto;
+  
+}
+.carrousel_parent-ecrans {
+    /* aligne horizontalement les enfants */
+    display: flex;
+    /* largeur du parent */
+    width: 100%;
+    overflow-x: scroll; /* permet de scroller horizontalement */
+    scroll-behavior: smooth; /* animation de défilement */
+    scroll-snap-type: x mandatory; /* permet de scroller par blocs */
+
+
+
+}
+.carrousel_ecran {
+    /* largeur du parent pour chaque enfant */
+    width: 100%;
+    /* permet de garder toute la largeur du parent */
+    flex: none;
+    scroll-snap-align: start; /* aligne les enfants par blocs */
+    
+}
+.carrousel_ecran figure {
+    /* enlève les marges par défaut */
+    margin: 0;
+}
+.carrousel {
+  position: relative;
+  background-color: var(--principal);
+  padding: 5%;
+  margin-bottom: 5vh;
+  border-radius: 3%;
+}
+.carrousel_btn {
+    position: absolute;
+    top: 50%;
+    top: calc(
+      min(500px, 100vw) / 16 * 9 / 2 + 1rem
+    ); /* centre verticalement ~50% vertical */
+    transform: translateY(-50%); /* methode du point mort */
+    width: 2rem;
+    height: 2rem;
+    background: #55B5A8;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: #fff;
+  }
+  .carrousel_btn-avant {
+    left: 0;
+    position: absolute;
+    margin-top: 50px;
+  
+  }
+  
+  .carrousel_btn-apres {
+    right: 0;
+    position: absolute;
+    margin-top: 50px;
+  }
+    
+.picture {
+    width: 75vw;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carrousel__title{
+  text-align: center;
+}
