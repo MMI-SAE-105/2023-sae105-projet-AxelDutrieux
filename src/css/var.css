@@ -1,3 +1,7 @@
 :root{
+    /*color*/
     --principal: #999165;
+
+    /*fonts*/
+    --home-title: 'Quando', cursive;
 }
