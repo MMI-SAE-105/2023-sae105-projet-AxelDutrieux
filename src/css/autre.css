@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4vw;
+    margin-bottom: 5vh;
 
 
 
@@ -26,4 +27,22 @@
     color: black;
     font-family: Quando;
     font-size: 1rem;
+}
+
+.autre__a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Playfair Display';
+    position: relative;
+    left: 20vw;
+    top: -1vh;
+}
+
+.autre__dernier{
+    /*centrer*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45vw;
 }

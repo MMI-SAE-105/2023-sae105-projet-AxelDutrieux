@@ -3,7 +3,8 @@
     position: relative;
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 2vh;
     top: -8px;
     left: -8px;
 }
@@ -68,4 +69,15 @@
 .footer__div{
     margin: 0;
 
+}
+
+.footer__entreprise{
+    /*centrer le texte*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--p);
+    font-size: 0.8rem;
+    color: var(--soustitre);
 }
