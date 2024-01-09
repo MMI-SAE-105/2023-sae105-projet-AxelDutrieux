@@ -31,7 +31,7 @@
 
 .article__objet{
     position: relative;
-    margin-bottom: 500px;
+    margin-bottom: 800px;
     display: flex;
     justify-content: center;
 }
@@ -40,8 +40,8 @@
     position: absolute;
     background-color: black;
     width: 10px;
-    height: 1000px;
-    margin-bottom: 100px;
+    height: 450px;
+    margin-bottom: 5000 px;
 }
 
 .article__line{
@@ -100,4 +100,71 @@
 
 .article__circle--10{
     top: 400px
+}
+
+.article__fleche{
+    background-color: none;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 50px;
+    border-color: black transparent transparent transparent ;   
+    top: 449px;
+
+}
+
+.article__pfrise{
+    position: absolute;
+    color: black;
+}
+
+.article__pfrise--1{
+    top: 25px;
+    right: 100px;
+}
+
+.article__pfrise--2{
+    top: 65px;
+    right: 100px;
+}
+
+.article__pfrise--3{
+    top: 105px;
+    right: 100px;
+}
+
+.article__pfrise--4{
+    top: 145px;
+    right: 100px;
+}
+
+.article__pfrise--5{
+    top: 185px;
+    right: 100px;
+}
+
+.article__pfrise--6{
+    top: 225px;
+    right: 100px;
+}
+
+.article__pfrise--7{
+    top: 265px;
+    right: 100px;
+}
+
+.article__pfrise--8{
+    top: 305px;
+    right: 100px;
+}
+
+.article__pfrise--9{
+    top: 345px;
+    right: 100px;
+}
+
+.article__pfrise--10{
+    top: 385px;
+    right: 100px;
 }
