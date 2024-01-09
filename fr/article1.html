@@ -10,7 +10,7 @@
 <body>
     <header class="header header--other">
         <div x-data="{menu: false}">
-            <button @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
+            <button class="header__btn" @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
             <nav class="nav" x-show="menu" x-transition.duration.500ms>
                 <button class="nav__cross" @click="menu=!menu"><img src="../public/img/ProjetIcn/Cross.webp" alt="CrossIcon"></button>
                 <ul class="nav__ul">
