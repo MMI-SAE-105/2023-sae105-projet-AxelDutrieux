@@ -1,4 +1,7 @@
 
+.article{
+    background-color: var(--secondaire);
+}
 .article__sub{
     color: var(--soustitre);
     font-size: small;
