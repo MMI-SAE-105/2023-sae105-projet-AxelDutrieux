@@ -28,3 +28,76 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.article__objet{
+    position: relative;
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.article__frise{
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 1000px;
+    margin-bottom: 100px;
+}
+
+.article__line{
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 10px;
+    z-index: 2;
+}
+
+.article__circle{
+    /*créer un rond*/
+    position: absolute;
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.article__circle--1{
+    top: 40px
+}
+
+.article__circle--2{
+    top: 80px
+}
+
+.article__circle--3{
+    top: 120px
+}
+
+.article__circle--4{
+    top: 160px
+}
+
+.article__circle--5{
+    top: 200px
+}
+
+.article__circle--6{
+    top: 240px
+}
+
+.article__circle--7{
+    top: 280px
+}
+
+.article__circle--8{
+    top: 320px
+}
+
+.article__circle--9{
+    top: 360px
+}
+
+.article__circle--10{
+    top: 400px
+}

@@ -28,7 +28,6 @@
 }
 
 .sommaire__link::after{
-    content: "-->";
     margin-left: 1vw;
 }
 .sommaire__p{
