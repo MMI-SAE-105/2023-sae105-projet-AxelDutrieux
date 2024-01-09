@@ -1,9 +1,10 @@
 :root{
     /*color*/
-    --principal: rgb(139, 107, 36); 
-    --secondaire: rgb(199, 207, 218);
-    --tertiaire: rgb(195, 26, 56);
-    --quaternaire: rgb(0, 0, 0);
+    --principal: #726D35; 
+    --secondaire: #ADAA87;
+    --tertiaire: #413F2A;
+    --quaternaire: #A6A177;
+    --cinquieme: #000;
     --soustitre: #746D6D;
 
     /*fonts*/

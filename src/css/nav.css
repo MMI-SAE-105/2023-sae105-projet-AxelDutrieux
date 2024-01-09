@@ -1,6 +1,6 @@
 .nav{
     position: fixed;
-    background-color: var(--principal);
+    background-color: var(--secondaire);
     width: 100vw;
     height: 100vh;
     top: 0;
