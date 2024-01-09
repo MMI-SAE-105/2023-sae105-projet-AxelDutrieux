@@ -1,3 +1,29 @@
 .autre__section{
-    
+
+}
+
+.autre__div{
+    /*ranger les éléments en 2 colonnes*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4vw;
+
+
+
+}
+
+.autre__btn{
+    border: none;
+    background: none;
+    color: black;
+    position: relative;
+    left: 20vw;
+    top: -1vh;
+
+}
+
+.autre__title{
+    color: black;
+    font-family: Quando;
+    font-size: 1rem;
 }
