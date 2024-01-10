@@ -22,14 +22,14 @@
 
 .mess__title1{
     position: relative;
-    font-family: var();
+    font-family: var(--article-h2);
     color: var(--tertiaire);
 
 }
 
 .mess__title2{
-    position: absolute;
-    font-family: var();
+    position: relative;
+    font-family: var(--article-h2);
     color: var(--tertiaire);
     margin: 0;
 }
@@ -54,6 +54,16 @@
 }
 
 .mess__div--title{
+    font-family: ;
+}
 
+.mess__h1{
+    font-family: var(--article-h1);
+    color: var(--tertiaire);
+}
+
+.mess__p{
+    font-family: var(--p);
+    color: var(--tertiaire);
 }
 

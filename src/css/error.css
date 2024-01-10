@@ -1,0 +1,12 @@
+.error__body{
+    background-color: var(--secondaire);
+}
+
+.error__h1{
+    color: var(--tertiaire);
+    font-family: var(--home-title);
+}
+
+.error__p{
+    color: var(--tertiaire);
+}

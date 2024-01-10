@@ -225,3 +225,7 @@
 .article__name--10{
     top: 455px;
 }
+
+.article__li{
+    margin-bottom: 3vh;
+}
