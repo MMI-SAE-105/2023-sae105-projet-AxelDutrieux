@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header header--other">
+        <div x-data="{menu: false}">
+            <button class="header__btn" @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <button class="nav__cross" @click="menu=!menu"><img src="../public/img/ProjetIcn/Cross.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Articles</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a class="nav__a" href="../fr/article.html">Tous les articles</a>
+                            <a href="../fr/article1.html">La citation</a>
+                            <a href="../fr/article2.html">Le film</a>
+                            <a href="../fr/article3.html">La chanson</a>
+                            <a href="../fr/article4.html">Le livre</a>
+                            <a href="../fr/article5.html">Le réalisateur</a>
+                            <a href="../fr/article6.html">La chanteuse</a>
+                            <a href="../fr/article7.html">L'écrivain</a>
+                          </span>
+                        </section></li>
+                    <li class="nav__li"><a  class="nav__h1" href="../fr/Apropos.html">A propos</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/contact.html"></a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/glossaire.html">Glossaire</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/contact.html">Contact</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/Autreprojets.html">Autres Projets</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="../fr/index.html"><img class="header__logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+        <a href="../en/article1.html"><img class="header__langage" src="../public/img/ProjetIcn/Ellipse 14.webp" alt="LangageIcon"></a>
+    </header>
+    <main>
+        <h1 class="article__h1">From the Russian revolution to the anthem of the French resistance</h1>
+        <p class="article__p">Despite many hardships to overcome. Anna Marlyn will be remembered for a song that lifted an entire country: Le chant des partisans</p>
+        <section>
+            <img class="article__img" src="../public/img/ProjetImg/article 6 1.webp" alt="Article6.1">
+            <p class="article__sub">Anna Marlyn</p>
+        </section>
+        <section>
+            <h1 class="article__h1">From St. Petersburg to France</h1>
+            <p class="article__p">Born on October 30, 1917 in St. Petersburg, Russia, Anna Marlyn, real name Anna Betoulinski, experienced the harsh realities of the Russian Revolution from an early age. Her father was executed during the revolution, and she fled to France with her mother, sister and governess in the early 1920s. At the age of 13, her life took a transformative turn when she received a guitar as a gift.</p>
+        </section>
+        <section>
+            <h1>Initially conceived for a Russian text</h1>
+            <p class="article__p">Marlyn's musical journey really began when she composed the melody for "Chant des Partisans" in 1941. This melody was originally composed for a Russian text, inspired by an article she had read about the role of Soviet partisans during the Battle of Smolensk. The word "partisan" struck a chord in her heart, leading to the creation of this iconic song.</p>
+        </section>
+        <section>
+            <h1 class="article__h1">The power of art</h1>
+            <p class="article__p">During the Second World War, Marlyn's music played a significant role in the French Resistance against Nazi occupation. After fleeing France for London in 1940, she joined the Free French Forces as a canteen worker at their headquarters. It was here that she composed "La marche des partisans", or "Chanson de guérilla", on her guitar. This song, later known as "Le Chant des Partisans", became an anthem for the Resistance, its melody serving as a cue on the BBC's "Honneur et Patrie" program from May 17, 1943 to May 2, 1944.
+                Anna Marlyn's musical contribution to the Resistance is a testament to the power of art in times of conflict. Her melody not only lifted spirits, but also served as a beacon of hope and resistance during one of history's darkest hours.
+            </p>
+       </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <a href="../fr/index.html"><img class="footer__img footer__img--logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+            <a href="https://butmmi.thomasjeu.fr/#/"><img class="footer__img footer__img--site" src="../public/img/ProjetIcn/image 8.webp" alt="MMIIcon"></a>
+        </section>
+        <h2 class="footer__p footer__p--h2">Axel DUTRIEUX MMI TPA2</h2>
+        <section>
+            <div class="footer__div">
+            <a class="footer__a" href="https://www.instagram.com/axldtx/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-1.webp" alt="InstagramIcon"></a>
+            <a class="footer__a" href="https://twitter.com/AxelD30861765"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-2.webp" alt="XIcon"></a>
+            <a class="footer__a" href="https://www.facebook.com/axel.dutrieux.9/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-3.webp" alt="FacebookIcon"></a>
+            <a class="footer__a" href="https://www.linkedin.com/in/axel-dutrieux-71239b271/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-4.webp" alt="LinkedInIcon"></a>
+            </div>
+        </section>
+        <p class="footer__p footer__p--p">Projet réalisé dans le cadre du cursus en 1er année de MMI de Montbéliard</p>
+        <p class="footer__entreprise">MMI Montbéliard</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header header--other">
+        <div x-data="{menu: false}">
+            <button class="header__btn" @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <button class="nav__cross" @click="menu=!menu"><img src="../public/img/ProjetIcn/Cross.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Articles</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a class="nav__a" href="../fr/article.html">Tous les articles</a>
+                            <a href="../fr/article1.html">La citation</a>
+                            <a href="../fr/article2.html">Le film</a>
+                            <a href="../fr/article3.html">La chanson</a>
+                            <a href="../fr/article4.html">Le livre</a>
+                            <a href="../fr/article5.html">Le réalisateur</a>
+                            <a href="../fr/article6.html">La chanteuse</a>
+                            <a href="../fr/article7.html">L'écrivain</a>
+                          </span>
+                        </section></li>
+                    <li class="nav__li"><a  class="nav__h1" href="../fr/Apropos.html">A propos</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/contact.html"></a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/glossaire.html">Glossaire</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/contact.html">Contact</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/Autreprojets.html">Autres Projets</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="../fr/index.html"><img class="header__logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+        <a href="../en/article1.html"><img class="header__langage" src="../public/img/ProjetIcn/Ellipse 14.webp" alt="LangageIcon"></a>
+    </header>
+    <main>
+        <h1 class="article__h1">The passionate historian of the Second World War</h1>
+        <p class="article__p">Olivier Wieviorka, historian emeritus and prolific writer, is a leading figure in French historical research. His brilliant career, punctuated by numerous publications, reflects a deep passion for the Second World War and an exceptional academic record.</p>
+        <section>
+            <img class="article__img" src="../public/img/ProjetImg/article 7 1.webp" alt="Article7.1">
+            <p class="article__sub">Olivier Wieviorka</p>
+        </section>
+        <section>
+            <h1 class="article__h1">Youth and studies </h1>
+            <p class="article__p">Olivier Wieviorka was born in 1960 in Paris, France. His fascination with history began in his youth, while studying at the Lycée Janson de Sailly. He went on to pursue his higher education at the Université Paris I Panthéon-Sorbonne, where he obtained a master's degree in history. His quest for knowledge led him to earn a PhD in contemporary history, an essential milestone in his academic training.</p>
+        </section>
+        <section>
+            <h1>Passion for the Second World War:</h1>
+            <p class="article__p">World War II has always been a major source of inspiration for Olivier Wieviorka. His interest in this tumultuous period of history turned into a real passion. He has devoted decades to studying in depth the political, social and military aspects of the war, while at the same time focusing on analyzing the lasting consequences of this event on contemporary society.</p>
+        </section>
+        <section>
+            <h1 class="article__h1">His works </h1>
+            <p class="article__p">Olivier Wieviorka is the author of many major works that have left their mark on historical research. Among his most notable works are "Oran, July 5, 1962: Un massacre oublié," in which he examines the tragic events of the Algerian War, as well as "La France à la Libération," an in-depth exploration of France during the Liberation period.
+                His expertise and talent as a writer have been recognized by his peers, making him an undisputed authority on contemporary history. He has also contributed to numerous collective works and actively participated in interdisciplinary research projects.
+                In conclusion, Olivier Wieviorka embodies the commitment and passion of a historian devoted to the study of the Second World War. His impressive academic career and seminal works make him a key player on the French historical scene, sharing with the public his in-depth understanding of this crucial period in world history.
+            </p>
+        </section>
+    <section>
+        <h1>Discover these last 10 books</h1>
+        <section class="article__objet">
+            <div class="article__frise"></div>
+            <a href="https://www.cairn.info/les-lieux-de-l-histoire-de-france--9782262064327.htm" class="article__circle article__circle--1"></a>
+            <a href="https://www.cairn.info/les-mythes-de-la-seconde-guerre-mondiale--9782262075118.htm" class="article__circle article__circle--2"></a>
+            <a href="https://www.cairn.info/histoire-militaire-de-la-france--9782262064822.htm" class="article__circle article__circle--3"></a>
+            <a href="https://www.cairn.info/la-guerre-du-desert--9782262065409.htm" class="article__circle article__circle--4"></a>
+            <a href="https://www.cairn.info/methode-pour-le-commentaire-et-la-dissertation-his--9782200622930.htm" class="article__circle article__circle--5"></a>
+            <a href="https://www.cairn.info/histoire-militaire-de-la-france-tome-2--9782262099930.htm" class="article__circle article__circle--6"></a>
+            <a href="https://www.cairn.info/les-grandes-erreurs-de-la-seconde-guerre-mondiale--9782262103934.htm" class="article__circle article__circle--7"></a>
+            <a href="https://www.cairn.info/histoire-totale-de-la-seconde-guerre-mondiale--9782262079932.htm" class="article__circle article__circle--8"></a>
+            <a href="https://www.cairn.info/une-histoire-de-la-resistance-en-europe-occidentale--9782262104771.htm" class="article__circle article__circle--9"></a>
+            <a href="https://www.cairn.info/histoire-de-la-resistance--9782262104733.htm" class="article__circle article__circle--10"></a>
+            <p class="article__pfrise article__pfrise--1">2017</p>
+            <p class="article__pfrise article__pfrise--2">2018</p>
+            <p class="article__pfrise article__pfrise--3">2018</p>
+            <p class="article__pfrise article__pfrise--4">2019</p>
+            <p class="article__pfrise article__pfrise--5">2021</p>
+            <p class="article__pfrise article__pfrise--6">2022</p>
+            <p class="article__pfrise article__pfrise--7">2023</p>
+            <p class="article__pfrise article__pfrise--8">2023</p>
+            <p class="article__pfrise article__pfrise--9">2023</p>
+            <p class="article__pfrise article__pfrise--10">2023</p>
+            <a href="https://www.cairn.info/histoire-totale-de-la-seconde-guerre-mondiale--9782262079932.htm" class="article__name article__name--1">Les lieux de l'Histoire de France</a>
+            <a href="https://www.cairn.info/les-mythes-de-la-seconde-guerre-mondiale--9782262075118.htm" class="article__name article__name--2">Les myhtes de la seconde guerre mondiale</a>
+            <a href="https://www.cairn.info/histoire-militaire-de-la-france--9782262064822.htm" class="article__name article__name--3">Histoire militaire de la France</a>
+            <a href="https://www.cairn.info/la-guerre-du-desert--9782262065409.htm" class="article__name article__name--4">La guerre du desert</a>
+            <a href="https://www.cairn.info/methode-pour-le-commentaire-et-la-dissertation-his--9782200622930.htm" class="article__name article__name--5">Methode pour le commentaire et la dissertation historique</a>
+            <a href="https://www.cairn.info/histoire-militaire-de-la-france-tome-2--9782262099930.htm" class="article__name article__name--6">Histoire militaire de la France t.2</a>
+            <a href="https://www.cairn.info/les-grandes-erreurs-de-la-seconde-guerre-mondiale--9782262103934.htm" class="article__name article__name--7">Les grandes erreurs de la seconde guerre mondiale</a>
+            <a href="https://www.cairn.info/histoire-totale-de-la-seconde-guerre-mondiale--9782262079932.htm" class="article__name article__name--8">Histoire totale de la seconde guerre mondiale</a>
+            <a href="https://www.cairn.info/une-histoire-de-la-resistance-en-europe-occidentale--9782262104771.htm" class="article__name article__name--9">Une histoire de la resistance en europe occidentale</a>
+            <a href="https://www.cairn.info/histoire-de-la-resistance--9782262104733.htm" class="article__name article__name--10">Histoire de la résistance</a>
+            <div class="article__fleche"></div>
+
+            
+        </section>
+    </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <a href="../fr/index.html"><img class="footer__img footer__img--logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+            <a href="https://butmmi.thomasjeu.fr/#/"><img class="footer__img footer__img--site" src="../public/img/ProjetIcn/image 8.webp" alt="MMIIcon"></a>
+        </section>
+        <h2 class="footer__p footer__p--h2">Axel DUTRIEUX MMI TPA2</h2>
+        <section>
+            <div class="footer__div">
+            <a class="footer__a" href="https://www.instagram.com/axldtx/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-1.webp" alt="InstagramIcon"></a>
+            <a class="footer__a" href="https://twitter.com/AxelD30861765"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-2.webp" alt="XIcon"></a>
+            <a class="footer__a" href="https://www.facebook.com/axel.dutrieux.9/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-3.webp" alt="FacebookIcon"></a>
+            <a class="footer__a" href="https://www.linkedin.com/in/axel-dutrieux-71239b271/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-4.webp" alt="LinkedInIcon"></a>
+            </div>
+        </section>
+        <p class="footer__p footer__p--p">Projet réalisé dans le cadre du cursus en 1er année de MMI de Montbéliard</p>
+        <p class="footer__entreprise">MMI Montbéliard</p>
+    </footer>
+        <p class="footer__p footer__p--p">Projet réalisé dans le cadre du cursus en 1er année de MMI de Montbéliard</p>
+    </footer>
+
+</body>
+</html>
