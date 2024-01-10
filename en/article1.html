@@ -6,24 +6,55 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="header header--other">
+        <div x-data="{menu: false}">
+            <button class="header__btn" @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <button class="nav__cross" @click="menu=!menu"><img src="../public/img/ProjetIcn/Cross.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Articles</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a class="nav__a" href="../fr/article.html">All Articles</a>
+                            <a href="../en/article1.html">The Quote</a>
+                            <a href="../en/article2.html">The Film</a>
+                            <a href="../en/article3.html">The song</a>
+                            <a href="../en/article4.html">The Book</a>
+                            <a href="../en/article5.html">The Director</a>
+                            <a href="../en/article6.html">The Singer</a>
+                            <a href="../en/article7.html">The Writer</a>
+                          </span>
+                        </section></li>
+                    <li class="nav__li"><a  class="nav__h1" href="../fr/Apropos.html">About</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/glossaire.html">Glossary</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/Autreprojets.html">Other Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="../en/index.html"><img class="header__logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+        <a href="../fr/article1.html"><img class="header__langage" src="../public/img/ProjetIcn/Ellipse 13.webp" alt="LangageIcon"></a>
+    </header>
+
     <main>
-    <h1>A cult line from French cinema</h1>
-    <p>The quote "Si je connaissais l'con qu'à fait péter le pont" is taken from the 1975 film On a retrouvé la 7ème compagnie, a sequel to the 1973 film Mais où est donc passée la septième compagnie? Both films were directed by Robert Lamoureux. The line was spoken by Private Pithivier, played by Jean Lefebvre, after Colonel Blanchet, played by Robert Lamoureux himself, blew up a bridge to prevent the Germans from pursuing them.</p>
+    <h1 class="article__h1">A cult line from French cinema</h1>
+    <p class="article__p">The quote "Si je connaissais l'con qu'à fait péter le pont" is taken from the 1975 film On a retrouvé la 7ème compagnie, a sequel to the 1973 film Mais où est donc passée la septième compagnie? Both films were directed by Robert Lamoureux. The line was spoken by Private Pithivier, played by Jean Lefebvre, after Colonel Blanchet, played by Robert Lamoureux himself, blew up a bridge to prevent the Germans from pursuing them.</p>
     <section>
-        <img src="" alt="Article1.1">
-        <p></p>
+        <img class="article__img" src="../public/img/ProjetImg/article1 1.webp" alt="Article1.1">
+        <p class="article__sub"></p>
     </section>
     <section>
-        <h1>Cult film for cult quote</h1>
-        <p>The film On a retrouvé la 7ème compagnie is a comedy about the adventures of Staff Sergeant Chaudard (Pierre Mondy) and his two men, Pithivier (Jean Lefebvre) and Tassin (Henri Guybet), during the debacle of June 1940. After escaping from the Germans, they are rescued in their pants by a farmer who provides them with French officers' uniforms abandoned during the retreat. They pretended to be officers and found themselves in a château where French prisoners were being held. They try to break them out, but their plan fails when the bridge explodes.</p>
+        <h1 class="article__h1">Cult film for cult quote</h1>
+        <p class="article__p">The film On a retrouvé la 7ème compagnie is a comedy about the adventures of Staff Sergeant Chaudard (Pierre Mondy) and his two men, Pithivier (Jean Lefebvre) and Tassin (Henri Guybet), during the debacle of June 1940. After escaping from the Germans, they are rescued in their pants by a farmer who provides them with French officers' uniforms abandoned during the retreat. They pretended to be officers and found themselves in a château where French prisoners were being held. They try to break them out, but their plan fails when the bridge explodes.</p>
     </section>
     <section>
-        <h1>Contrast between the seriousness of the situation and the lightness of tone</h1>
-        <p>The quote Si je connaissais l'con qu'à fait péter le pont (If I knew the idiot who blew up the bridge) has become a cult line in French cinema, because it illustrates the absurd, offbeat humour of the film. It shows the ignorance and naivety of Pithivier, who doesn't know that it was his superior who caused the explosion. It also creates a contrast between the seriousness of the situation and the lightness of tone. It makes the audience laugh by its surprise effect and incongruous nature.</p>
+        <h1 class="article__h1">Contrast between the seriousness of the situation and the lightness of tone</h1>
+        <p class="article__p">The quote Si je connaissais l'con qu'à fait péter le pont (If I knew the idiot who blew up the bridge) has become a cult line in French cinema, because it illustrates the absurd, offbeat humour of the film. It shows the ignorance and naivety of Pithivier, who doesn't know that it was his superior who caused the explosion. It also creates a contrast between the seriousness of the situation and the lightness of tone. It makes the audience laugh by its surprise effect and incongruous nature.</p>
     </section>
     <section>
-        <h1>A Napoleonic story?</h1>
-        <p>The quote Si je connaissais l'con qu'à fait péter le pont also has a link with reality, as it refers to a historical fact. During the retreat from Russia in 1812, General Sorbier was ordered to blow up the bridges over the Berezina to slow down the Russian troops, but he misheard and blew up the bridges before the French troops could pass. Napoleon is said to have said: "Sorbier, your name will never go down in history". Robert Lamoureux used this anecdote to create a comic situation in his film.</p>
+        <h1 class="article__h1">A Napoleonic story?</h1>
+        <p class="article__p">The quote Si je connaissais l'con qu'à fait péter le pont also has a link with reality, as it refers to a historical fact. During the retreat from Russia in 1812, General Sorbier was ordered to blow up the bridges over the Berezina to slow down the Russian troops, but he misheard and blew up the bridges before the French troops could pass. Napoleon is said to have said: "Sorbier, your name will never go down in history". Robert Lamoureux used this anecdote to create a comic situation in his film.</p>
     </section>
     </main>
     <footer>

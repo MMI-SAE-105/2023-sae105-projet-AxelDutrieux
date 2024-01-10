@@ -9,7 +9,7 @@
 </head>
 <body class="body">
     <header class="header header--home">
-        <div x-data="{menu: false}">
+        <section x-data="{menu: false}">
             <button class="header__btn" @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
             <nav class="nav" x-show="menu" x-transition.duration.500ms>
                 <button class="nav__cross" @click="menu=!menu"><img src="../public/img/ProjetIcn/Cross.webp" alt="CrossIcon"></button>
@@ -35,7 +35,7 @@
                     <li class="nav__li"><a class="nav__h1" href="../fr/Autreprojets.html">Autres Projets</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
         <a href="#"><img class="header__langage" src="../public/img/ProjetIcn/Ellipse 14.webp" alt="LangageIcon"></a>
         <img class="header__wallpaper" src="../public/img/ProjetImg/Fond D'écran Site 1.webp" alt="Background">
         <h1 class="header__h1">"Si je connaissais le con qui a fait sauter le pont"</h1>
