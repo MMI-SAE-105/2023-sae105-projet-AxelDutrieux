@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header header--home">
+        <div x-data="{menu: false}">
+            <button class="header__btn" @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <button class="nav__cross" @click="menu=!menu"><img src="../public/img/ProjetIcn/Cross.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Articles</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a class="nav__a" href="../fr/article.html">All Articles</a>
+                            <a href="../fr/article1.html">The Quote</a>
+                            <a href="../fr/article2.html">The Film</a>
+                            <a href="../fr/article3.html">The Song</a>
+                            <a href="../fr/article4.html">The Book</a>
+                            <a href="../fr/article5.html">The Directore</a>
+                            <a href="../fr/article6.html">The Singer</a>
+                            <a href="../fr/article7.html">The Writer</a>
+                          </span>
+                        </section></li>
+                    <li class="nav__li"><a  class="nav__h1" href="../fr/Apropos.html">About</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/glossaire.html">Glossaire</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/Autreprojets.html">Others Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="#"><img class="header__langage" src="../public/img/ProjetIcn/Ellipse 14.webp" alt="LangageIcon"></a>
+        <img class="header__wallpaper" src="../public/img/ProjetImg/Fond D'écran Site 1.webp" alt="Background">
+        <h1 class="header__h1">"Si je connaissais le con qui a fait sauter le pont"</h1>
+    </header>
+    <main class="main">
+        <section class="sommaire">
+            <img class="sommaire__img" src="../public/img/ProjetImg/article1 1.webp" alt="Article1">
+            <p class="sommaire__p">"Si je connaissais l'con qu'a fait sauter le pont," from the film On a retrouvé la 7ème compagnie, has gained a cult following for its absurd, offbeat humor.</p>
+            <a class="sommaire__link" href="../fr/article1.html">Discover &rarr;</a>
+        </section>
+        <section class="sommaire">
+            <img class="sommaire__img" src="../public/img/ProjetImg/article 2 1.webp" alt="Article2">
+            <p class="sommaire__p">In the French cinematographic landscape, few films have managed to leave their mark and cross generations with as much force as On a retrouvé la 7ème compagnie.</p>
+            <a class="sommaire__link" href="../fr/article2.html">Discover &rarr;</a>
+        </section>
+        <section class="sommaire">
+            <img class="sommaire__img" src="../public/img/ProjetImg/article 3 1.webp" alt="Article3">
+            <p class="sommaire__p">Music has always been a powerful means of expression and communication, capable of transcending borders and generations.</p>
+            <a class="sommaire__link" href="../fr/article3.html">Discover	&rarr;</a>
+        </section>
+        <section class="sommaire">
+            <img class="sommaire__img" src="../public/img/ProjetImg/article 4 1.webp" alt="Article4">
+            <p class="sommaire__p">In his book Une histoire de la résistance en Europe occidentale: 1940-1945, Olivier Wieviorka, an eminent French historian, offers us a unique and global perspective on these resistance movements.</p>
+            <a class="sommaire__link" href="../fr/article4.html">Discover	&rarr;</a>
+        </section>
+        <section class="sommaire">
+            <img class="sommaire__img" src="../public/img/ProjetImg/article 5 1.webp" alt="Article5">
+            <p class="sommaire__p">Robert Lamoureux, a name that resonates with strength and admiration in the world of French cinema.</p>
+            <a class="sommaire__link" href="../fr/article5.html">Discover	&rarr;</a>
+        </section>
+        <section class="sommaire">
+            <img class="sommaire__img" src="../public/img/ProjetImg/article 6 1.webp" alt="Article6">
+            <p class="sommaire__p">She made history with a song of hope, and yet her path was not an easy one.</p>.
+            <a class="sommaire__link" href="../fr/article6.html">Discover &rarr;</a>
+        </section>
+        <section class="sommaire">
+            <img class="sommaire__img" src="../public/img/ProjetImg/article 7 1.webp" alt="Article7">
+            <p class="sommaire__p">Passionate about the Second World War, he has tackled many subjects in the books he has written.</p>. 
+            <a class="sommaire__link" href="../fr/article7.html">Discover	&rarr;</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <a href="../fr/index.html"><img class="footer__img footer__img--logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+            <a href="https://butmmi.thomasjeu.fr/#/"><img class="footer__img footer__img--site" src="../public/img/ProjetIcn/image 8.webp" alt="MMIIcon"></a>
+        </section>
+        <h2 class="footer__p footer__p--h2">Axel DUTRIEUX MMI TPA2</h2>
+        <section>
+            <div class="footer__div">
+            <a class="footer__a" href="https://www.instagram.com/axldtx/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-1.webp" alt="InstagramIcon"></a>
+            <a class="footer__a" href="https://twitter.com/AxelD30861765"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-2.webp" alt="XIcon"></a>
+            <a class="footer__a" href="https://www.facebook.com/axel.dutrieux.9/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-3.webp" alt="FacebookIcon"></a>
+            <a class="footer__a" href="https://www.linkedin.com/in/axel-dutrieux-71239b271/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-4.webp" alt="LinkedInIcon"></a>
+            </div>
+        </section>
+        <p class="footer__p footer__p--p">Projet réalisé dans le cadre du cursus en 1er année de MMI de Montbéliard</p>
+        <p class="footer__entreprise">MMI Montbéliard</p>
+    </footer>
+</body>
+</html>
