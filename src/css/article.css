@@ -44,7 +44,7 @@
     position: absolute;
     background-color: black;
     width: 10px;
-    height: 450px;
+    height: 500px;
     margin-bottom: 5000 px;
 }
 
@@ -67,11 +67,11 @@
 }
 
 .article__circle--1{
-    top: 40px
+    top: 20px
 }
 
 .article__circle--2{
-    top: 80px
+    top: 70px
 }
 
 .article__circle--3{
@@ -79,31 +79,31 @@
 }
 
 .article__circle--4{
-    top: 160px
+    top: 170px
 }
 
 .article__circle--5{
-    top: 200px
+    top: 220px
 }
 
 .article__circle--6{
-    top: 240px
+    top: 270px
 }
 
 .article__circle--7{
-    top: 280px
-}
-
-.article__circle--8{
     top: 320px
 }
 
+.article__circle--8{
+    top: 370px
+}
+
 .article__circle--9{
-    top: 360px
+    top: 420px
 }
 
 .article__circle--10{
-    top: 400px
+    top: 470px
 }
 
 .article__fleche{
@@ -114,7 +114,7 @@
     border-style: solid;
     border-width: 50px;
     border-color: black transparent transparent transparent ;   
-    top: 449px;
+    top: 499px;
 
 }
 
@@ -124,12 +124,12 @@
 }
 
 .article__pfrise--1{
-    top: 25px;
+    top: 5px;
     right: 100px;
 }
 
 .article__pfrise--2{
-    top: 65px;
+    top: 55px;
     right: 100px;
 }
 
@@ -139,37 +139,37 @@
 }
 
 .article__pfrise--4{
-    top: 145px;
+    top: 155px;
     right: 100px;
 }
 
 .article__pfrise--5{
-    top: 185px;
+    top: 205px;
     right: 100px;
 }
 
 .article__pfrise--6{
-    top: 225px;
+    top: 255px;
     right: 100px;
 }
 
 .article__pfrise--7{
-    top: 265px;
-    right: 100px;
-}
-
-.article__pfrise--8{
     top: 305px;
     right: 100px;
 }
 
+.article__pfrise--8{
+    top: 355px;
+    right: 100px;
+}
+
 .article__pfrise--9{
-    top: 345px;
+    top: 405px;
     right: 100px;
 }
 
 .article__pfrise--10{
-    top: 385px;
+    top: 455px;
     right: 100px;
 }
 
@@ -183,11 +183,11 @@
 }
 
 .article__name--1{
-    top: 25px;
+    top: 5px;
 }
 
 .article__name--2{
-    top: 65px;
+    top: 55px;
 }
 
 .article__name--3{
@@ -195,29 +195,29 @@
 }
 
 .article__name--4{
-    top: 145px;
+    top: 155px;
 }
 
 .article__name--5{
-    top: 185px;
+    top: 205px;
 }
 
 .article__name--6{
-    top: 225px;
+    top: 255px;
 }
 
 .article__name--7{
-    top: 265px;
-}
-
-.article__name--8{
     top: 305px;
 }
 
+.article__name--8{
+    top: 355px;
+}
+
 .article__name--9{
-    top: 345px;
+    top: 405px;
 }
 
 .article__name--10{
-    top: 385px;
+    top: 455px;
 }
