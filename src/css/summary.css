@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    background-color: var(--secondaire);
+    border-radius: 5%;
+    padding-right: 0;
+    
 }
 
 .summary__section--right{
@@ -11,10 +15,11 @@
 
 
 .summary__img{
-    /*donner exactement la même taille à toutes les images*/
+    /*donner la même taille à toutes les images*/
     width: 30vw;
-    height: 15vh;
-    object-fit: cover;
-    object-position: start;
-    clip-path: circle(40% at 50% 50%);
+    height: auto;
+    border-radius: 5%;
+
+
+
 }
