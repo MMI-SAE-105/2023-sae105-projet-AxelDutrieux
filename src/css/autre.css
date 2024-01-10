@@ -20,14 +20,15 @@
 }
 
 .autre__title{
-    color: black;
+    color: var(--tertiaire);
     font-family: Quando;
     font-size: 1rem;
+
 }
 
 .autre__a{
     text-decoration: none;
-    color: black;
+    color: var(--tertiaire);
     font-family: 'Playfair Display';
     position: relative;
     left: 20vw;

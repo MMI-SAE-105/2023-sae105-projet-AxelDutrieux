@@ -10,27 +10,27 @@
 }
 
 .mess__email{
-    border: 1px solid black;
+    border: 1px solid var(--tertiaire);
     padding: 1vh;
 }
 
 .mess__area{
     width: 80%;
     padding: 1vh;
-    border: 1px solid black;
+    border: 1px solid var(--tertiaire);
 }
 
 .mess__title1{
     position: relative;
     font-family: var();
-    color: black;
+    color: var(--tertiaire);
 
 }
 
 .mess__title2{
     position: absolute;
     font-family: var();
-    color: black;
+    color: var(--tertiaire);
     margin: 0;
 }
 

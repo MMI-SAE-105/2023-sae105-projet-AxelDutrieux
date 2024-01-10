@@ -50,12 +50,12 @@ img {
     transform: translateY(-50%); /* methode du point mort */
     width: 2rem;
     height: 2rem;
-    background: #55B5A8;
+    background: var(--principal);
     border-radius: 50%;
     border: none;
     display: grid;
     place-content: center;
-    color: #fff;
+    color: var(--tertiaire);
   }
   .carrousel_btn-avant {
     left: 0;

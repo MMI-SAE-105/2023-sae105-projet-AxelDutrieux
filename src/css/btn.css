@@ -1,6 +1,6 @@
 .btn{
-    background-color: #999165;
-    color: black;
+    background-color: var(--principal);
+    color: var(--tertiaire);
     display: block;
     width: 15%;
     height: auto;
