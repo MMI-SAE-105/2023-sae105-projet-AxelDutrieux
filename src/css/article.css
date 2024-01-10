@@ -172,3 +172,52 @@
     top: 385px;
     right: 100px;
 }
+
+.article__name{
+    position: absolute;
+    color: black;
+    left: 2vw;
+    width: 40vw;
+    font-size: 0.8rem;
+
+}
+
+.article__name--1{
+    top: 25px;
+}
+
+.article__name--2{
+    top: 65px;
+}
+
+.article__name--3{
+    top: 105px;
+}
+
+.article__name--4{
+    top: 145px;
+}
+
+.article__name--5{
+    top: 185px;
+}
+
+.article__name--6{
+    top: 225px;
+}
+
+.article__name--7{
+    top: 265px;
+}
+
+.article__name--8{
+    top: 305px;
+}
+
+.article__name--9{
+    top: 345px;
+}
+
+.article__name--10{
+    top: 385px;
+}
