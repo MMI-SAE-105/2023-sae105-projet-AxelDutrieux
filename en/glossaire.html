@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header header--other">
+        <div x-data="{menu: false}">
+            <button class="header__btn" @click="menu=!menu"><img class="header__menu" src="../public/img/ProjetIcn/Vector.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <button class="nav__cross" @click="menu=!menu"><img src="../public/img/ProjetIcn/Cross.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Articles</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a class="nav__a" href="../fr/article.html">All Articles</a>
+                            <a href="../en/article1.html">The Quote</a>
+                            <a href="../en/article2.html">The Film</a>
+                            <a href="../en/article3.html">The song</a>
+                            <a href="../en/article4.html">The Book</a>
+                            <a href="../en/article5.html">The Director</a>
+                            <a href="../en/article6.html">The Singer</a>
+                            <a href="../en/article7.html">The Writer</a>
+                          </span>
+                        </section></li>
+                    <li class="nav__li"><a  class="nav__h1" href="../fr/Apropos.html">About</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/glossaire.html">Glossary</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="../fr/Autreprojets.html">Other Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="../en/index.html"><img class="header__logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+        <a href="../fr/glossaire.html"><img class="header__langage" src="../public/img/ProjetIcn/Ellipse 13.webp" alt="LangageIcon"></a>
+    </header>
+    <main>
+    <h1 class="article__h1">Glossaire</h1>
+    <ul>
+        <li class="article__p article__li"><strong>Trilogy</strong>: A series of three literary, cinematographic, or artistic works that are linked by a common theme, plot, or characters.</li>
+        <li class="article__p article__li"><strong>Casting</strong>: The process of selecting actors and actresses to play roles in a film, play, television show, or other productions artistic.</li>
+        <li class="article__p article__li"><strong>Duality</strong>: The condition of being double or divided into two parts, or the coexistence of two opposite or contrasting elements.</li>
+        <li class="article__p article__li"><strong>Satiric</strong>: Referring to satire, a literary or artistic genre that criticizes or mocks subjects, often in a humorous, sarcastic, or critical manner.</li >
+        <li class="article__p article__li"><strong>German Occupation</strong>: The period during World War II when German armed forces invaded and occupied several countries in Europe, notably France.</li>
+        <li class="article__p article__li"><strong>Transnational</strong>: Relating to something that exists, operates, or occurs across national borders, often involving international or global activities.</li>
+        <li class="article__p article__li"><strong>École normale supérieure Paris-Saclay</strong>: An institution of higher education in France, specializing in teacher training and research.</li>
+        <li class="article__p article__li"><strong>Institute of Social Sciences of Politics</strong>: An academic institution dedicated to the study of social sciences, politics and research in France.</li >
+        <li class="article__p article__li"><strong>Institute of Social Sciences of Politics</strong>: An academic institution dedicated to the study of social sciences, politics and research in France.</li >
+        <li class="article__p article__li"><strong>SOE (Special Operations Executive)</strong>: A secret British organization during World War II responsible for carrying out sabotage and intelligence operations behind enemy lines. </li>
+        <li class="article__p article__li"><strong> OSS (Office of Strategic Services)</strong>: The ancestor of the CIA (Central Intelligence Agency), an American intelligence agency created during the Second World War to carry out covert and intelligence operations.</li>
+        <li class="article__p article__li"><strong>National Liberation Committee</strong>: A French resistance group active during World War II, which played a key role in the liberation of occupied France.</li >
+        <li class="article__p article__li"><strong>National Council of the Belgian Resistance </strong>: A Belgian resistance organization that fought against the German occupation during World War II.</li>
+        <li class="article__p article__li"><strong>Satirical</strong>: Which is inappropriate, inconsistent or inconsistent with a given situation.</li>
+        <li class="article__p article__li"><strong>General Sorbier</strong>: The name of a particular individual is not provided, and there could be several people with that name. It would be necessary to provide more details for a precise definition.</li>
+        <li class="article__p article__li"><strong>Napoleon</strong>: Napoleon Bonaparte was a French soldier and politician who became Emperor of the French in the early 19th century. He ruled France during a period known as the First French Empire and was a major figure in European history.</li>
+    </ul>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <a href="../fr/index.html"><img class="footer__img footer__img--logo" src="../public/img/ProjetIcn/Logo final 1.webp" alt="LogoIcon"></a>
+            <a href="https://butmmi.thomasjeu.fr/#/"><img class="footer__img footer__img--site" src="../public/img/ProjetIcn/image 8.webp" alt="MMIIcon"></a>
+        </section>
+        <h2 class="footer__p footer__p--h2">Axel DUTRIEUX MMI TPA2</h2>
+        <section>
+            <div class="footer__div">
+            <a class="footer__a" href="https://www.instagram.com/axldtx/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-1.webp" alt="InstagramIcon"></a>
+            <a class="footer__a" href="https://twitter.com/AxelD30861765"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-2.webp" alt="XIcon"></a>
+            <a class="footer__a" href="https://www.facebook.com/axel.dutrieux.9/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-3.webp" alt="FacebookIcon"></a>
+            <a class="footer__a" href="https://www.linkedin.com/in/axel-dutrieux-71239b271/"><img class="footer__reseaux" src="../public/img/ProjetIcn/Vector-4.webp" alt="LinkedInIcon"></a>
+            </div>
+        </section>
+        <p class="footer__p footer__p--p">Projet réalisé dans le cadre du cursus en 1er année de MMI de Montbéliard</p>
+        <p class="footer__entreprise">MMI Montbéliard</p>
+    </footer>
+</body>
+</html>
