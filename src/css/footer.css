@@ -11,9 +11,7 @@
 
 .footer__p{
     color: white;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 2%;
+    
 }
 
 .footer__img{
@@ -54,10 +52,16 @@
 .footer__p--h2{
     font-size: 1.0em;
     text-align: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 2%;
 }
 
 .footer__p--p{
     text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 2%;
 }
 
 .footer__section{
@@ -80,4 +84,16 @@
     font-family: var(--p);
     font-size: 0.8rem;
     color: var(--soustitre);
+}
+
+.footer__p--mailto{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__mailto{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
 }
