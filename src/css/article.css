@@ -229,3 +229,10 @@
 .article__li{
     margin-bottom: 3vh;
 }
+
+.article__br{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--tertiaire);
+    width: 80%;
+}
